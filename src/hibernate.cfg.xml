@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+  <hibernate-configuration>
+      <session-factory>
+          <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+          <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+          <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/test</property>
+          <property name="hibernate.connection.username">root</property>
+          <property name="hibernate.connection.password">1029</property>
+          <property name="hibernate.hbm2ddl.auto">update</property>
+          <mapping resource="hib/dto/AdminTable.hbm.xml"/>
+          <mapping resource="hib/dto/Dessert.hbm.xml"/>
+          <mapping resource="hib/dto/Drinks.hbm.xml"/>
+          <mapping resource="hib/dto/MainCourse.hbm.xml"/>
+          <mapping resource="hib/dto/OrderTable.hbm.xml"/>
+          <mapping resource="hib/dto/CustomerSign.hbm.xml"/>
+          <mapping resource="hib/dto/Staters.hbm.xml"/>
+          <mapping resource="hib/dto/Bill.hbm.xml"/>
+          <mapping resource="hib/dto/ReviewTable.hbm.xml"/>
+          
+      </session-factory>
+   </hibernate-configuration>
+
+

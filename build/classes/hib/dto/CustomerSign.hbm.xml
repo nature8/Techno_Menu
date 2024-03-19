@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="hibernate.beans">
+    <class name="CustomerSign" table="Customer">
+        <id name="id" column="customerId"/>
+        <property name="custName" column="Name"/>
+        <property name="contact" column="Contact"/>
+        <property name="tableNo" column="TableNo"/>
+        <property name="amount" column="Amount"/>
+    </class>
+</hibernate-mapping>
+
+
